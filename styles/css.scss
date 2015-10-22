@@ -1,0 +1,27 @@
+@import '../bower_components/normalize.css/normalize';
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$visual-grid:true;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body {
+  @include outer-container(1024px);
+}
+main {
+  @include span-columns(6);
+  @include shift(3);
+  background: pink;
+}
+h3 {
+  text-align: center;
+}
+input {
+  width: 100%;
+  border: 20px #ddd dotted;
+  border-radius: 50%;
+}
+input:focus {
+  outline: 0;
+}
+.answer {
+  text-align: center;
+}
